@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Formas {
+﻿namespace Formas {
 	public class Rectangulo : Cuadrado {
 		private float baseRectangulo { get; set; }
 		private float alturaRectangulo { get; set; }

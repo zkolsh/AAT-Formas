@@ -1,16 +1,29 @@
 ﻿namespace Formas {
 	internal class Program {
 		static void Main(string[] args) {
-			List<Cuadrado> formas = new List<Cuadrado>();
+			List<IForma> formas = new List<IForma>();
+			formas.Add(new Triangulo(2, 4));
 			formas.Add(new Rectangulo(7, 3));
+			formas.Add(new Triangulo(6, 7));
 			formas.Add(new Cuadrado(4));
+			formas.Add(new Cuadrado(6));
+			formas.Add(new Circulo(6));
+			formas.Add(new Triangulo(8, 11));
+			formas.Add(new Circulo(1));
+			formas.Add(new Circulo(12));
+			formas.Add(new Rectangulo(11, 1));
+			formas.Add(new Triangulo(11, 1));
+			formas.Add(new Circulo(9));
 
-			Cuadrado c = new Cuadrado(5);
-			c.Lado = 6;
-			foreach (Cuadrado forma in formas) {
-				forma.MostrarInformacion();
+			Console.WriteLine(">>> Perimetros");
+			foreach (IForma forma in formas) {
+				Console.WriteLine(forma.CalcularPerimetro());
 			}
 
+			Console.WriteLine(">>> Áreas");
+			foreach (IForma forma in formas) {
+				Console.WriteLine(forma.CalcularArea());
+			}
 		}
 	}
 }

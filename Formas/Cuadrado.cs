@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Formas {
-	public class Cuadrado {
+﻿namespace Formas {
+	public class Cuadrado : IForma {
 		private float lado;
 		public float Lado {
 			get { return lado; }

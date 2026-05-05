@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Formas {
+﻿namespace Formas {
 	internal interface IForma {
 		public float CalcularArea();
 		public float CalcularPerimetro();
