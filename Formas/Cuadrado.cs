@@ -2,33 +2,28 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Formas
-{
-    public class Cuadrado 
-    {
-        private float lado;
-        public float Lado
-        {
-            get { return lado; }
-            set { lado = value; }
-        }
+namespace Formas {
+	public class Cuadrado {
+		private float lado;
+		public float Lado {
+			get { return lado; }
+			set { lado = value; }
+		}
 
-        public Cuadrado(float lado)
-        {
-            this.lado = lado;
-        }
-        public virtual float CalcularArea()
-        {
-            return lado * lado;
-        }
-        public virtual float CalcularPerimetro()
-        {
-            return 4 * lado;
-        }
+		public Cuadrado(float lado) {
+			this.lado = lado;
+		}
 
-        public void MostrarInformacion()
-        {
-            Console.WriteLine($"Cuadrado: Área = {CalcularArea()}, Perímetro = {CalcularPerimetro()}");
-        }
-    }
+		public virtual float CalcularArea() {
+			return lado * lado;
+		}
+
+		public virtual float CalcularPerimetro() {
+			return 4 * lado;
+		}
+
+		public void MostrarInformacion() {
+			Console.WriteLine($"Cuadrado: Área = {CalcularArea()}, Perímetro = {CalcularPerimetro()}");
+		}
+	}
 }
